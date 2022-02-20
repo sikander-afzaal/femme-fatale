@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 import logo from "../../Assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,6 +16,7 @@ function Header() {
   const [open, setOpen] = useState(false);
   const [openNav, setOpenNav] = useState(false);
   const [closeNav, setCloseNav] = useState(true);
+  const [black, setBlack] = useState(false);
 
   useEffect(() => {
     const mobile = window.innerWidth;
@@ -39,23 +41,54 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="left-header">
+      <Link
+        onClick={() => {
+          setBlack(false);
+        }}
+        to="/"
+        className="left-header"
+      >
         <img src={logo} alt="" />
-      </div>
+      </Link>
       <div className={`right-header ${show ? "display-none" : ""}`}>
-        <a href="#" className="nav-link">
-          Project.
-        </a>
-        <a href="#" className="nav-link">
-          About.
-        </a>
-        <a href="#" className="nav-link">
+        <Link
+          onClick={() => {
+            setBlack(false);
+          }}
+          to="/"
+          className={`nav-link ${black ? "black" : ""}`}
+        >
+          HOME.
+        </Link>
+        <Link
+          onClick={() => {
+            setBlack(true);
+          }}
+          to="/faq"
+          className={`nav-link ${black ? "black" : ""}`}
+        >
+          FAQ.
+        </Link>
+        <Link
+          onClick={() => {
+            setBlack(false);
+          }}
+          to="/"
+          className={`nav-link ${black ? "black" : ""}`}
+        >
           Contact.
-        </a>
-        <a href="#" className="nav-link">
+        </Link>
+        <Link
+          onClick={() => {
+            setBlack(false);
+          }}
+          to="/"
+          className={`nav-link ${black ? "black" : ""}`}
+        >
           XR Division.
-        </a>
+        </Link>
       </div>
+      {/* //side bar -----------------------  */}
       <div className={`open-nav ${show ? "display" : ""}`}>
         <button
           className={`burger ${open ? "active" : ""}`}
@@ -71,62 +104,122 @@ function Header() {
           }`}
         >
           <div className="nav-div first-nav">
-            <a
-              href="#"
+            <Link
+              to="/"
               className={`open-nav-tag ${openNav ? "animation" : ""} ${
                 closeNav ? "delay-tag" : ""
               }`}
+              onClick={() => {
+                setOpen((prev) => !prev);
+                setOpenNav((prev) => !prev);
+                setCloseNav((prev) => !prev);
+                setBlack(false);
+              }}
             >
               Case Studies
-            </a>
+            </Link>
             <div
               className={`sub-anchor ${openNav ? "animation" : ""} ${
                 closeNav ? "delay-tag" : ""
               }`}
             >
-              <a href="#" className="sub-link">
+              <Link
+                onClick={() => {
+                  setOpen((prev) => !prev);
+                  setOpenNav((prev) => !prev);
+                  setCloseNav((prev) => !prev);
+                  setBlack(false);
+                }}
+                to="/"
+                className="sub-link"
+              >
                 MUSEUMS & CULTURE
-              </a>
-              <a href="#" className="sub-link">
+              </Link>
+              <Link
+                onClick={() => {
+                  setOpen((prev) => !prev);
+                  setOpenNav((prev) => !prev);
+                  setCloseNav((prev) => !prev);
+                  setBlack(false);
+                }}
+                to="/"
+                className="sub-link"
+              >
                 ENTERTAINMENT
-              </a>
-              <a href="#" className="sub-link">
+              </Link>
+              <Link
+                onClick={() => {
+                  setOpen((prev) => !prev);
+                  setOpenNav((prev) => !prev);
+                  setCloseNav((prev) => !prev);
+                  setBlack(false);
+                }}
+                to="/"
+                className="sub-link"
+              >
                 BRANDS & CONTENT
-              </a>
-              <a href="#" className="sub-link">
+              </Link>
+              <Link
+                onClick={() => {
+                  setOpen((prev) => !prev);
+                  setOpenNav((prev) => !prev);
+                  setCloseNav((prev) => !prev);
+                  setBlack(false);
+                }}
+                to="/"
+                className="sub-link"
+              >
                 ARCHIVES
-              </a>
+              </Link>
             </div>
           </div>
           <div className="nav-div">
-            <a
-              href="#"
+            <Link
+              onClick={() => {
+                setOpen((prev) => !prev);
+                setOpenNav((prev) => !prev);
+                setCloseNav((prev) => !prev);
+                setBlack(true);
+              }}
+              to="/faq"
               className={`open-nav-tag ${openNav ? "animation" : ""} ${
                 closeNav ? "delay-tag" : ""
               }`}
             >
-              About
-            </a>
+              FAQ
+            </Link>
           </div>
           <div className="nav-div">
-            <a
-              href="#"
+            <Link
+              onClick={() => {
+                setOpen((prev) => !prev);
+                setOpenNav((prev) => !prev);
+                setCloseNav((prev) => !prev);
+                setBlack(false);
+              }}
+              to="/"
               className={`open-nav-tag ${openNav ? "animation" : ""} ${
                 closeNav ? "delay-tag" : ""
               }`}
             >
               Contact
-            </a>
+            </Link>
           </div>
           <div className="nav-div">
-            <a
-              href="#"
+            <Link
+              onClick={() => {
+                setOpen((prev) => !prev);
+                setOpenNav((prev) => !prev);
+                setCloseNav((prev) => !prev);
+                setBlack(false);
+              }}
+              to="/"
               className={`open-nav-tag ${openNav ? "animation" : ""} ${
                 closeNav ? "delay-tag" : ""
               }`}
             >
               XR Division
-            </a>
+            </Link>
           </div>
           <div
             className={`social-div ${openNav ? "animation" : ""} ${

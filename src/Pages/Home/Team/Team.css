@@ -1,0 +1,63 @@
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 6rem;
+  gap: 5rem;
+  padding-bottom: 3rem;
+}
+.team h1 {
+  font-size: 4rem;
+  font-family: "Cambo";
+}
+.team-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-box {
+  flex: 0.33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.team-box img {
+  max-width: 60%;
+  margin-bottom: 2rem;
+  object-fit: contain;
+}
+.team-box h2 {
+  font-size: 2.5rem;
+  font-family: "Cambo";
+}
+.team-box p {
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 1188px) {
+  .team-box h2 {
+    font-size: 2rem;
+  }
+  .team-box p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .team {
+    gap: 1rem;
+  }
+  .team-grid {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .team-box img {
+    max-width: 50%;
+  }
+  .team h1 {
+    font-size: 3.5rem;
+  }
+}

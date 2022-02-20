@@ -7,3 +7,6 @@
   font-family: Mabry;
   src: url("./Assets/Font/Mabry\ Pro\ Black/Mabry Pro Black.otf");
 }
+html {
+  scroll-behavior: smooth;
+}

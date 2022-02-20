@@ -1,0 +1,14 @@
+.nft {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 2rem;
+}
+.nft-h1 {
+  font-size: 4rem;
+  font-family: "Cambo";
+}

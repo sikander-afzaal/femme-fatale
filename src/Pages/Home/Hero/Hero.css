@@ -134,8 +134,13 @@
     width: 918px;
   }
 }
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 819px) {
   .hero-h1 {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 624px) {
+  .hero-h1 {
+    font-size: 1.2rem;
   }
 }

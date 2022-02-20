@@ -13,14 +13,18 @@ function Hero() {
         className="vid"
       ></video>
       <h1 className="hero-h1">
-        Femme Fatale Studio <br /> is a creative studio of visual, <br />{" "}
-        interactive & immersive experiences.
+        Welcome to the Epoh Lounge Club! <br />A new view of HOPE <br /> Help us
+        reverse engineer HOPE at the Epoh Lounge Club!
       </h1>
-      <div className="scroll-div">
+      <a
+        style={{ textDecoration: "none" }}
+        href="#about"
+        className="scroll-div"
+      >
         <div className="arrow"></div>
         <div className="circle"></div>
         <p>Scroll</p>
-      </div>
+      </a>
     </div>
   );
 }
