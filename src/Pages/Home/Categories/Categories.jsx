@@ -11,7 +11,7 @@ function Categories() {
   const [pop3, showPop3] = useState(false);
   return (
     <div className="category">
-      <div className="category-box">
+      <div id="what" className="category-box">
         <div className="img-category">
           <img src={img1} alt="" />
         </div>
@@ -53,7 +53,7 @@ function Categories() {
           </div>
         </div>
       </div>
-      <div className="category-box2">
+      <div id="why" className="category-box2">
         <div className="img-category">
           <img src={img2} alt="" />
         </div>
@@ -122,7 +122,7 @@ function Categories() {
           </div>
         </div>
       </div>
-      <div className="category-box">
+      <div id="roadmap" className="category-box">
         <div className="img-category">
           <img src={img3} alt="" />
         </div>

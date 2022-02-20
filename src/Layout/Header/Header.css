@@ -34,6 +34,20 @@
   font-weight: 600;
   transition: all 0.4s ease-in-out;
   text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+.nav-link:hover::before {
+  width: 100%;
+}
+.nav-link::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: lightgray;
+  transition: all 0.25s ease-in-out;
 }
 .none-link {
   transform: translateY(20px);
@@ -141,12 +155,39 @@
   color: white;
   font-size: 1rem;
   font-family: "Mabry";
-
+  position: relative;
+  padding-bottom: 0.25rem;
   text-decoration: none;
 }
+.sub-link:hover::before {
+  width: 100%;
+}
+.sub-link::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: lightgray;
+  transition: all 0.25s ease-in-out;
+}
+.open-nav-tag:hover::before {
+  width: 100%;
+}
+.open-nav-tag::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: lightgray;
+  transition: all 0.25s ease-in-out;
+}
 .open-nav-tag {
+  padding-bottom: 0.25rem;
   text-transform: uppercase;
   color: white;
+  position: relative;
   font-size: 1.2rem;
   margin: 1rem 0rem !important;
   font-family: "Mabry";
@@ -169,6 +210,10 @@
   color: white !important;
   font-size: 1.8rem;
   cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.social-div svg:hover {
+  color: lightgray !important;
 }
 .language-div {
   transform: translateY(20px);
@@ -183,6 +228,7 @@
 .language-div p {
   font-size: 1rem;
   font-family: "Mabry";
+  cursor: pointer;
 }
 .fr {
   color: #999999;

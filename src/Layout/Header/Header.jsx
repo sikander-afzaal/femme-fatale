@@ -123,42 +123,42 @@ function Header() {
                 closeNav ? "delay-tag" : ""
               }`}
             >
-              <Link
+              <a
                 onClick={() => {
                   setOpen((prev) => !prev);
                   setOpenNav((prev) => !prev);
                   setCloseNav((prev) => !prev);
                   setBlack(false);
                 }}
-                to="/"
+                href="/#what"
                 className="sub-link"
               >
-                MUSEUMS & CULTURE
-              </Link>
-              <Link
+                What is ELC
+              </a>
+              <a
                 onClick={() => {
                   setOpen((prev) => !prev);
                   setOpenNav((prev) => !prev);
                   setCloseNav((prev) => !prev);
                   setBlack(false);
                 }}
-                to="/"
+                href="/#why"
                 className="sub-link"
               >
-                ENTERTAINMENT
-              </Link>
-              <Link
+                Why ELC
+              </a>
+              <a
                 onClick={() => {
                   setOpen((prev) => !prev);
                   setOpenNav((prev) => !prev);
                   setCloseNav((prev) => !prev);
                   setBlack(false);
                 }}
-                to="/"
+                href="/#roadmap"
                 className="sub-link"
               >
-                BRANDS & CONTENT
-              </Link>
+                Roadmap to Hope
+              </a>
               <Link
                 onClick={() => {
                   setOpen((prev) => !prev);
