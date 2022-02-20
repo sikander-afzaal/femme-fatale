@@ -20,19 +20,16 @@ function Header() {
 
   useEffect(() => {
     const mobile = window.innerWidth;
-    if (mobile > 966) {
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 100) {
-          setShow(true);
-        } else {
-          setShow(false);
-          setOpenNav(false);
-          setOpen(false);
-        }
-      });
-    } else {
-      return;
-    }
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setShow(true);
+      } else {
+        setShow(false);
+        setOpenNav(false);
+        setOpen(false);
+      }
+    });
 
     return () => {
       window.removeEventListener("scroll");
