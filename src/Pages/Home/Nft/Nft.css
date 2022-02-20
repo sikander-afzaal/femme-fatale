@@ -12,3 +12,11 @@
   font-size: 4rem;
   font-family: "Cambo";
 }
+@media screen and (max-width: 500px) {
+  .nft {
+    margin-top: 2rem;
+  }
+  .nft-h1 {
+    font-size: 3rem;
+  }
+}

@@ -302,6 +302,14 @@
   }
 }
 
+@media screen and (max-width: 470px) {
+  .padding h1 {
+    font-size: 2rem;
+  }
+  .para h2 {
+    font-size: 1.6rem;
+  }
+}
 @media screen and (max-width: 452px) {
   .padding h1 {
     font-size: 2rem;

@@ -170,7 +170,7 @@
     margin-bottom: 0rem !important;
   }
 }
-@media screen and (max-width: 446px) {
+@media screen and (max-width: 470px) {
   .about {
     padding: 2rem 0rem;
   }

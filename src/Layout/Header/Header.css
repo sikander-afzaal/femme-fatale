@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   background-color: transparent;
-  height: 160px;
+  height: 102px;
   padding-inline: 3rem;
   position: fixed;
   top: 0;
@@ -78,9 +78,9 @@
   background: white;
   transition: all 250ms ease-out;
   cursor: pointer;
-  width: 64px;
+  width: 51px;
   position: relative;
-  height: 64px;
+  height: 51px;
   z-index: 5;
 }
 .black {

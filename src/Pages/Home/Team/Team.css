@@ -61,3 +61,11 @@
     font-size: 3.5rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .team {
+    margin-top: 2rem;
+  }
+  .team h1 {
+    font-size: 3rem;
+  }
+}

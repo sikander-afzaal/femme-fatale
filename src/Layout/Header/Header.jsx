@@ -40,7 +40,7 @@ function Header() {
   }, []);
 
   return (
-    <div className={`header ${show ? "white-color" : ""}`}>
+    <div className={`header ${show ? "" : ""}`}>
       <Link
         onClick={() => {
           setBlack(false);
