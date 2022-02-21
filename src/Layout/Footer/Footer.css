@@ -1,0 +1,106 @@
+.footer {
+  min-height: 60vh;
+  height: auto;
+  background-color: #272727;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  flex-direction: column;
+}
+.top-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 76%;
+}
+.col {
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.foot-links {
+  color: white;
+  padding-bottom: 0.2rem;
+  margin: 1rem 0rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-family: "Mabry";
+  position: relative;
+}
+.foot-links:hover::before {
+  width: 100%;
+}
+.foot-links::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.25s ease-in-out;
+}
+.sub-foot {
+  font-size: 1.2rem;
+  padding-left: 0.25rem;
+}
+.col img {
+  max-width: 60%;
+  object-fit: contain;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.left-foot,
+.right-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.legal {
+  color: white;
+  font-size: 0.9rem;
+}
+.copy {
+  color: grey;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 1147px) {
+  .top-footer {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 814px) {
+  .footer {
+    padding-top: 3rem;
+    gap: 4rem;
+  }
+  .top-footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .col {
+    align-items: center;
+  }
+  .col img {
+    max-width: 170px;
+  }
+}
+@media screen and (max-width: 446px) {
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .left-foot {
+    flex-direction: column;
+  }
+}

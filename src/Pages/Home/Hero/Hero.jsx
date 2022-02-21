@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import vid from "../../../Assets/vid.mp4";
+import vid from "../../../Assets/vid4.mp4";
 function Hero() {
   return (
     <div className="hero">
@@ -12,10 +12,6 @@ function Hero() {
         src={vid}
         className="vid"
       ></video>
-      <h1 className="hero-h1">
-        Welcome to the Epoh Lounge Club! <br />A new view of HOPE <br /> Help us
-        reverse engineer HOPE at the Epoh Lounge Club!
-      </h1>
       <a
         style={{ textDecoration: "none" }}
         href="#about"

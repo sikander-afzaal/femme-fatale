@@ -20,23 +20,43 @@
 }
 .team-box {
   flex: 0.33;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.team-box img {
+  max-width: 312px;
+  max-height: 360px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.text-box-team h2 {
+  font-size: 2.5rem;
+  font-family: "Cambo";
+}
+.text-box-team p {
+  font-size: 1.4rem;
+}
+.text-box-team {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
 }
-.team-box img {
-  max-width: 60%;
-  margin-bottom: 2rem;
-  object-fit: contain;
+.splide__pagination__page.is-active {
+  background-color: black !important;
 }
-.team-box h2 {
-  font-size: 2.5rem;
-  font-family: "Cambo";
+.splide__pagination__page {
+  background-color: lightgray !important;
 }
-.team-box p {
-  font-size: 1.4rem;
+.splide__pagination {
+  bottom: -1.5em !important;
 }
 @media screen and (max-width: 1188px) {
   .team-box h2 {
@@ -48,15 +68,9 @@
 }
 @media screen and (max-width: 750px) {
   .team {
-    gap: 1rem;
-  }
-  .team-grid {
-    flex-direction: column;
     gap: 3rem;
   }
-  .team-box img {
-    max-width: 50%;
-  }
+
   .team h1 {
     font-size: 3.5rem;
   }

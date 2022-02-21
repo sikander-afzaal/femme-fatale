@@ -5,18 +5,133 @@
   align-items: center;
   margin-top: 6rem;
   flex-direction: column;
-  overflow: hidden;
+  position: relative;
   gap: 2rem;
 }
 .nft-h1 {
   font-size: 4rem;
   font-family: "Cambo";
 }
+.nft-desc {
+  font-size: 1.4rem;
+  text-align: center;
+  width: 90%;
+}
+.overlay-5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 1200px;
+  width: 100%;
+  z-index: -10;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  transform: translate(-50%, 100px);
+}
+
+.pop-up-nft {
+  position: absolute;
+  gap: 4rem;
+  min-height: 90vh;
+  padding: 3rem 0rem;
+  height: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+  width: 90%;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  top: 50%;
+  left: 50%;
+
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  pointer-events: none;
+  transition: all 1s ease-in-out;
+  transition-delay: 0.3s;
+  transform: translate(-50%, 100px);
+}
+.pop-up-nft h1 {
+  text-decoration: underline;
+  font-family: "Cambo";
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+.vid-nft {
+  max-width: 640px;
+  max-height: 352px;
+}
+.pop-up-nft svg {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1518px) {
+  .pop-up-nft {
+    width: 95%;
+  }
+  .video-grid {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1462px) {
+  .pop-up-nft {
+    width: 95%;
+  }
+  .video-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    place-content: center;
+  }
+  .pop-up-nft svg {
+    top: 2%;
+    right: 5%;
+  }
+  .overlay-5 {
+    height: 1900px;
+  }
+  .vid-nft {
+    align-self: center;
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 712px) {
+  .vid-nft {
+    width: 470px;
+    max-height: 220px;
+  }
+  .overlay-5 {
+    height: 1372px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .nft {
     margin-top: 2rem;
   }
   .nft-h1 {
     font-size: 3rem;
+  }
+}
+@media screen and (max-width: 443px) {
+  .vid-nft {
+    width: 375px;
+    max-height: 192px;
+  }
+  .overlay-5 {
+    height: 1200px;
   }
 }

@@ -19,7 +19,7 @@
   flex: 0.5;
 }
 .left-header img {
-  max-width: 25%;
+  max-width: 16%;
   object-fit: contain;
 }
 .right-header {
