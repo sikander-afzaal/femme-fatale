@@ -13,7 +13,7 @@ function Nft() {
       <div className="video-grid">
         <Splide
           options={{
-            type: "loop",
+            rewind: true,
             perPage: 1,
             pauseOnHover: false,
             resetProgress: false,
@@ -26,6 +26,11 @@ function Nft() {
             drag: true,
             perMove: 1,
           }}
+          onMoved={(e, newIndex, prevIndex) => {
+            const vids = document.querySelectorAll(".vid-nft");
+            const video = vids[prevIndex];
+            video.pause();
+          }}
         >
           <SplideSlide>
             <video
@@ -35,7 +40,7 @@ function Nft() {
               autoPlay={false}
               controls={true}
               src={vid1}
-              className="vid-nft"
+              className="vid-nft 1"
             ></video>
           </SplideSlide>
           <SplideSlide>
@@ -46,7 +51,7 @@ function Nft() {
               autoPlay={false}
               controls={true}
               src={vid2}
-              className="vid-nft"
+              className="vid-nft 2"
             ></video>
           </SplideSlide>
           <SplideSlide>
@@ -57,7 +62,7 @@ function Nft() {
               autoPlay={false}
               src={vid3}
               controls={true}
-              className="vid-nft"
+              className="vid-nft 3"
             ></video>
           </SplideSlide>
           <SplideSlide>
@@ -68,7 +73,7 @@ function Nft() {
               autoPlay={false}
               controls={true}
               src={vid4}
-              className="vid-nft"
+              className="vid-nft 4"
             ></video>
           </SplideSlide>
         </Splide>
