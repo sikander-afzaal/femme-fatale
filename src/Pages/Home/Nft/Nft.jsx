@@ -34,7 +34,7 @@ function Nft() {
         >
           <SplideSlide>
             <video
-              muted={true}
+              muted={false}
               loop={true}
               playsInline={true}
               autoPlay={false}
@@ -45,7 +45,7 @@ function Nft() {
           </SplideSlide>
           <SplideSlide>
             <video
-              muted={true}
+              muted={false}
               loop={true}
               playsInline={true}
               autoPlay={false}
@@ -56,7 +56,7 @@ function Nft() {
           </SplideSlide>
           <SplideSlide>
             <video
-              muted={true}
+              muted={false}
               loop={true}
               playsInline={true}
               autoPlay={false}
@@ -67,7 +67,7 @@ function Nft() {
           </SplideSlide>
           <SplideSlide>
             <video
-              muted={true}
+              muted={false}
               loop={true}
               playsInline={true}
               autoPlay={false}
