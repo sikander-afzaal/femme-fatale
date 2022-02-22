@@ -129,7 +129,9 @@ function Categories() {
         </div>
         <div className="desc-category">
           <h1>ROADMAP TO HOPE</h1>
-          <p className="desc-cate">Our roadmap to hope.</p>
+          <p style={{ width: "67%" }} className="desc-cate">
+            Our roadmap to hope.
+          </p>
           <div onClick={() => showPop3(true)} className="scroll-div-category">
             <p>Click Reveal Roadmap EPOH</p>
             <div className="arrow-div-cate">

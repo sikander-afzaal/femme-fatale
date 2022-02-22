@@ -10,7 +10,7 @@
 }
 .nft-h1 {
   font-size: 4rem;
-  font-family: "Cambo";
+  font-family: "h1" !important;
   margin-bottom: 3rem;
 }
 
@@ -61,7 +61,7 @@
 }
 .vid-div h1 {
   font-size: 3rem;
-  font-family: "Cambo";
+  font-family: "h1" !important;
   text-decoration: underline;
 }
 .splide__arrow--prev {

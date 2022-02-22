@@ -11,7 +11,7 @@
 }
 .team h1 {
   font-size: 4rem;
-  font-family: "Cambo";
+  font-family: "h1" !important;
 }
 .team-grid {
   display: flex;

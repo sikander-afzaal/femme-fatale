@@ -40,7 +40,7 @@
 }
 .desc-category h1 {
   font-size: 3rem;
-  font-family: "Cambo", serif;
+  font-family: "h1", serif !important;
 }
 .desc-cate {
   width: 40%;
@@ -188,7 +188,7 @@
 .pop h1 {
   font-size: 3rem;
   text-decoration: underline;
-  font-family: "Cambo", serif;
+  font-family: "h1" !important;
 }
 .para {
   display: flex;
