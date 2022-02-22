@@ -11,20 +11,6 @@ function Nft() {
     <div className="nft">
       <h1 className="nft-h1">OUR NFT's</h1>{" "}
       <div className="video-grid">
-        {/* <div className="arrow-div-cate left-arrow">
-          <div className="arrow-outer">
-            {" "}
-            <div className="arrow-cate"></div>
-            <div className="circle-cate"></div>
-          </div>
-        </div>
-        <div className="arrow-div-cate right-arrow">
-          <div className="arrow-outer">
-            {" "}
-            <div className="arrow-cate"></div>
-            <div className="circle-cate"></div>
-          </div>
-        </div> */}
         <Splide
           options={{
             type: "loop",
@@ -46,7 +32,7 @@ function Nft() {
               muted={true}
               loop={true}
               playsInline={true}
-              autoPlay={true}
+              autoPlay={false}
               controls={true}
               src={vid1}
               className="vid-nft"
