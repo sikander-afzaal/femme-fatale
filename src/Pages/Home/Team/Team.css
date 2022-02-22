@@ -58,6 +58,7 @@
 .splide__pagination {
   bottom: -1.5em !important;
 }
+
 @media screen and (max-width: 1188px) {
   .team-box h2 {
     font-size: 2rem;
