@@ -33,48 +33,60 @@ function Nft() {
           }}
         >
           <SplideSlide>
-            <video
-              muted={false}
-              loop={true}
-              playsInline={true}
-              autoPlay={false}
-              controls={true}
-              src={vid1}
-              className="vid-nft 1"
-            ></video>
+            <div className="vid-div">
+              <h1>Epoh Garden</h1>
+              <video
+                muted={false}
+                loop={true}
+                playsInline={true}
+                autoPlay={false}
+                controls={true}
+                src={vid1}
+                className="vid-nft 1"
+              ></video>
+            </div>
           </SplideSlide>
           <SplideSlide>
-            <video
-              muted={false}
-              loop={true}
-              playsInline={true}
-              autoPlay={false}
-              controls={true}
-              src={vid2}
-              className="vid-nft 2"
-            ></video>
+            <div className="vid-div">
+              <h1>Epoh Penthouse</h1>
+              <video
+                muted={false}
+                loop={true}
+                playsInline={true}
+                autoPlay={false}
+                controls={true}
+                src={vid2}
+                className="vid-nft 2"
+              ></video>
+            </div>
           </SplideSlide>
           <SplideSlide>
-            <video
-              muted={false}
-              loop={true}
-              playsInline={true}
-              autoPlay={false}
-              src={vid3}
-              controls={true}
-              className="vid-nft 3"
-            ></video>
+            <div className="vid-div">
+              <h1>Epoh Sahara</h1>
+              <video
+                muted={false}
+                loop={true}
+                playsInline={true}
+                autoPlay={false}
+                src={vid3}
+                controls={true}
+                className="vid-nft 3"
+              ></video>
+            </div>
           </SplideSlide>
           <SplideSlide>
-            <video
-              muted={false}
-              loop={true}
-              playsInline={true}
-              autoPlay={false}
-              controls={true}
-              src={vid4}
-              className="vid-nft 4"
-            ></video>
+            <div className="vid-div">
+              <h1>Epoh Space</h1>
+              <video
+                muted={false}
+                loop={true}
+                playsInline={true}
+                autoPlay={false}
+                controls={true}
+                src={vid4}
+                className="vid-nft 4"
+              ></video>
+            </div>
           </SplideSlide>
         </Splide>
       </div>

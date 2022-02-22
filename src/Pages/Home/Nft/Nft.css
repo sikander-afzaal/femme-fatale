@@ -11,6 +11,7 @@
 .nft-h1 {
   font-size: 4rem;
   font-family: "Cambo";
+  margin-bottom: 3rem;
 }
 
 .video-grid {
@@ -46,6 +47,20 @@
   object-fit: contain;
   width: 100%;
 }
+.vid-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 1.5rem;
+}
+.vid-div h1 {
+  font-size: 3rem;
+  font-family: "Cambo";
+  text-decoration: underline;
+}
 @media screen and (max-width: 554px) {
   .splide__arrow {
     width: 3em !important;
@@ -54,5 +69,8 @@
   .splide__arrow svg {
     height: 2.2em !important;
     width: 1.5em !important;
+  }
+  .vid-div h1 {
+    font-size: 2rem;
   }
 }
