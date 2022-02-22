@@ -55,7 +55,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 1280px;
+  width: 1150px;
   height: auto;
   gap: 1.5rem;
 }
@@ -65,10 +65,10 @@
   text-decoration: underline;
 }
 .splide__arrow--prev {
-  left: 100px !important;
+  left: 10% !important;
 }
 .splide__arrow--next {
-  right: 100px !important;
+  right: 10% !important;
 }
 @media screen and (max-width: 1623px) {
   .splide__arrow--prev {
