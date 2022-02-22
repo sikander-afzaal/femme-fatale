@@ -4,9 +4,9 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import img from "../../../Assets/Team/mreigen.jpeg";
 import img2 from "../../../Assets/Team/mrepoh.jpeg";
-import img3 from "../../../Assets/Team/mrsean.jpeg";
+// import img3 from "../../../Assets/Team/mrsean.jpeg";
 import img4 from "../../../Assets/Team/msdaniel.jpg";
-import img5 from "../../../Assets/Team/mshalina.jpeg";
+// import img5 from "../../../Assets/Team/mshalina.jpeg";
 function Team() {
   return (
     <div className="team">

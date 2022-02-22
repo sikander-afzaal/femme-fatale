@@ -1,68 +1,91 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Nft.css";
 import vid1 from "../../../Assets/vid1.mp4";
 import vid2 from "../../../Assets/vid2.mp4";
 import vid3 from "../../../Assets/vid3.mp4";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import vid4 from "../../../Assets/vid4.mp4";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
 function Nft() {
-  const [open, setOpen] = useState(false);
   return (
     <div className="nft">
       <h1 className="nft-h1">OUR NFT's</h1>{" "}
-      <p className="nft-desc">
-        Some of our virtual properties/galleries are revealed
-      </p>
-      <div onClick={() => setOpen(true)} className="scroll-div-category">
-        <p>Click to find more:</p>
-        <div className="arrow-div-cate">
+      <div className="video-grid">
+        {/* <div className="arrow-div-cate left-arrow">
           <div className="arrow-outer">
             {" "}
             <div className="arrow-cate"></div>
+            <div className="circle-cate"></div>
           </div>
-
-          <div className="circle-cate"></div>
         </div>
-      </div>
-      <div className={`overlay-5 ${open ? "flex" : ""}`}></div>
-      <div className={`pop-up-nft ${open ? "flex" : ""}`}>
-        <FontAwesomeIcon icon={faXmark} onClick={() => setOpen(false)} />
-        <h1>GALLERY</h1>
-        <div className="video-grid">
-          <video
-            muted={true}
-            loop={true}
-            playsInline={true}
-            autoPlay={true}
-            src={vid1}
-            className="vid-nft"
-          ></video>
-          <video
-            muted={true}
-            loop={true}
-            playsInline={true}
-            autoPlay={true}
-            src={vid2}
-            className="vid-nft"
-          ></video>
-          <video
-            muted={true}
-            loop={true}
-            playsInline={true}
-            autoPlay={true}
-            src={vid3}
-            className="vid-nft"
-          ></video>
-          <video
-            muted={true}
-            loop={true}
-            playsInline={true}
-            autoPlay={true}
-            src={vid4}
-            className="vid-nft"
-          ></video>
-        </div>
+        <div className="arrow-div-cate right-arrow">
+          <div className="arrow-outer">
+            {" "}
+            <div className="arrow-cate"></div>
+            <div className="circle-cate"></div>
+          </div>
+        </div> */}
+        <Splide
+          options={{
+            type: "loop",
+            perPage: 1,
+            pauseOnHover: false,
+            resetProgress: false,
+            height: "auto",
+            loop: true,
+            width: "100%",
+            gap: "0rem",
+            arrows: true,
+            pagination: false,
+            drag: true,
+            perMove: 1,
+          }}
+        >
+          <SplideSlide>
+            <video
+              muted={true}
+              loop={true}
+              playsInline={true}
+              autoPlay={true}
+              controls={true}
+              src={vid1}
+              className="vid-nft"
+            ></video>
+          </SplideSlide>
+          <SplideSlide>
+            <video
+              muted={true}
+              loop={true}
+              playsInline={true}
+              autoPlay={false}
+              controls={true}
+              src={vid2}
+              className="vid-nft"
+            ></video>
+          </SplideSlide>
+          <SplideSlide>
+            <video
+              muted={true}
+              loop={true}
+              playsInline={true}
+              autoPlay={false}
+              src={vid3}
+              controls={true}
+              className="vid-nft"
+            ></video>
+          </SplideSlide>
+          <SplideSlide>
+            <video
+              muted={true}
+              loop={true}
+              playsInline={true}
+              autoPlay={false}
+              controls={true}
+              src={vid4}
+              className="vid-nft"
+            ></video>
+          </SplideSlide>
+        </Splide>
       </div>
     </div>
   );

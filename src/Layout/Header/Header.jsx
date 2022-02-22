@@ -12,15 +12,13 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
-  const [show, setShow] = useState(false);
-  const [open, setOpen] = useState(false);
-  const [openNav, setOpenNav] = useState(false);
-  const [closeNav, setCloseNav] = useState(true);
-  const [black, setBlack] = useState(false);
+  const [show, setShow] = useState(false); // to show background color white in header when scrolled
+  const [open, setOpen] = useState(false); // to open the nav
+  const [openNav, setOpenNav] = useState(false); // to adjust transition delay when we open the nav
+  const [closeNav, setCloseNav] = useState(true); // to adjust transition delay when we close the nav
+  const [black, setBlack] = useState(false); // to change font color to black when we go to faq section
 
   useEffect(() => {
-    const mobile = window.innerWidth;
-
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
         setShow(true);
@@ -111,6 +109,9 @@ function Header() {
                 setOpenNav((prev) => !prev);
                 setCloseNav((prev) => !prev);
                 setBlack(false);
+                setTimeout(() => {
+                  window.scrollTo(0, 0);
+                }, 800);
               }}
             >
               Case Studies
@@ -177,6 +178,9 @@ function Header() {
                 setOpenNav((prev) => !prev);
                 setCloseNav((prev) => !prev);
                 setBlack(true);
+                setTimeout(() => {
+                  window.scrollTo(0, 0);
+                }, 800);
               }}
               to="/faq"
               className={`open-nav-tag ${openNav ? "animation" : ""} ${

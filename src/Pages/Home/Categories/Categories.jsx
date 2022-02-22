@@ -6,6 +6,7 @@ import img3 from "../../../Assets/3.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 function Categories() {
+  // all the popup opening states
   const [pop, showPop] = useState(false);
   const [pop2, showPop2] = useState(false);
   const [pop3, showPop3] = useState(false);
