@@ -28,19 +28,22 @@ function Nft() {
           }}
           onMoved={(e, newIndex, prevIndex) => {
             const vids = document.querySelectorAll(".vid-nft");
-            const video = vids[prevIndex];
-            video.pause();
+            const videoPrev = vids[prevIndex];
+            const videoNext = vids[newIndex];
+            videoPrev.pause();
+            videoNext.load();
+            videoNext.play();
           }}
         >
           <SplideSlide>
             <div className="vid-div">
               <h1>Epoh Garden</h1>
               <video
-                muted={false}
+                muted={true}
                 loop={true}
                 playsInline={true}
-                autoPlay={false}
-                controls={true}
+                autoPlay={true}
+                controls={false}
                 src={vid1}
                 className="vid-nft 1"
               ></video>
@@ -54,7 +57,7 @@ function Nft() {
                 loop={true}
                 playsInline={true}
                 autoPlay={false}
-                controls={true}
+                controls={false}
                 src={vid2}
                 className="vid-nft 2"
               ></video>
@@ -69,7 +72,7 @@ function Nft() {
                 playsInline={true}
                 autoPlay={false}
                 src={vid3}
-                controls={true}
+                controls={false}
                 className="vid-nft 3"
               ></video>
             </div>
@@ -82,7 +85,7 @@ function Nft() {
                 loop={true}
                 playsInline={true}
                 autoPlay={false}
-                controls={true}
+                controls={false}
                 src={vid4}
                 className="vid-nft 4"
               ></video>

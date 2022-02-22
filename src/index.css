@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gothic Regular" !important;
 }
 @font-face {
-  font-family: Mabry;
-  src: url("./Assets/Font/Mabry\ Pro\ Black/Mabry Pro Black.otf");
+  font-family: Gothic Regular;
+  src: url("./Assets/Font/Century\ Gothic\ Std\ Regular/Century Gothic Std Regular.otf");
 }
 html {
   scroll-behavior: smooth;
