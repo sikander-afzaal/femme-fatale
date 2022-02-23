@@ -162,7 +162,7 @@
   top: 50%;
   gap: 4rem;
   left: 50%;
-  overflow: scroll;
+  overflow: auto;
   visibility: hidden;
   z-index: -10;
   pointer-events: none;
@@ -170,6 +170,13 @@
   transition: all 1s ease-in-out;
   transition-delay: 0.3s;
   transform: translate(-50%, 100px);
+}
+.pop::-webkit-scrollbar {
+  background-color: white;
+  width: 10px;
+}
+.pop::-webkit-scrollbar-thumb {
+  background-color: #f1a20f9d;
 }
 .flex {
   display: flex !important;
