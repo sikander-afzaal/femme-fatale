@@ -128,7 +128,7 @@
   width: 50px;
 }
 /* pop------------ */
-.overlay,
+/* .overlay,
 .overlay2,
 .overlay3 {
   min-height: 900px;
@@ -144,23 +144,25 @@
   opacity: 0;
   transition: all 1s ease-in-out;
   transform: translate(-50%, 100px);
-}
+} */
 .pop {
   width: 80%;
   height: auto;
-  min-height: 80vh;
+  max-height: 90vh;
+  min-height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-color: white;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  position: absolute;
+  position: fixed;
   padding: 2rem 0rem;
   top: 50%;
   gap: 4rem;
   left: 50%;
+  overflow: scroll;
   visibility: hidden;
   z-index: -10;
   pointer-events: none;
@@ -200,12 +202,142 @@
 }
 .para h2 {
   font-size: 2.2rem;
+  color: #f1a30f;
 }
 .para p {
   font-size: 1.2rem;
   line-height: 1.5;
   width: 70%;
 }
+/* roadmap ================================  */
+.roadmap2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+}
+
+.roadmap2 h1 {
+  color: black;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  overflow: visible;
+  margin-bottom: 30px;
+}
+
+.roadmap-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+  gap: 2rem;
+  overflow: visible;
+  flex-direction: column;
+}
+.roadmap-image::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 2px;
+  left: 12%;
+}
+.roadmap-bg {
+  border-radius: 65px;
+  width: 1250px;
+  object-fit: contain;
+}
+.pointer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  position: static;
+  width: 100% !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-pointer {
+  width: max-content;
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.4;
+}
+.left-pointer h2 {
+  color: black;
+  margin-bottom: 14px;
+}
+.right-pointer {
+  color: black;
+
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 0.6;
+}
+.right-pointer h4 {
+  font-size: 1.3rem;
+  padding: 0px;
+  margin: 0px;
+  overflow: visible;
+  font-family: GilroyBold;
+  color: #f1a30f;
+}
+
+.right-pointer h6 {
+  font-size: 0.9rem;
+  padding: 0px;
+  margin: 0px;
+  overflow: visible;
+  font-family: GilroyBold;
+  color: black;
+}
+.left-pointer p {
+  font-size: 1.5rem;
+  padding: 0px;
+  margin: 0px;
+  overflow: visible;
+  font-family: GilroyBold;
+  color: #f1a30f;
+}
+.left-pointer h1 {
+  font-size: 1rem;
+  padding: 0px;
+  margin: 0px;
+  overflow: visible;
+  font-family: GilroyBold;
+  color: #f1a30f;
+}
+/*//linear-gradient(#d4ffb2 0%, #62de00 100%);
+background-color: #b8c6db;
+background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+*/
+.right-pointer p {
+  font-size: 0.9rem;
+  padding: 0px;
+  margin: 10px 0;
+  overflow: visible;
+  font-family: "GilroyBold";
+
+  color: black;
+}
+
+.pointer-div .right-pointer {
+  order: 2 !important;
+}
+.pointer-div .left-pointer {
+  order: 1 !important;
+}
+
 @media screen and (min-width: 1885px) {
   .category {
     max-width: 1885px;
@@ -228,15 +360,36 @@
     width: 90%;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 940px) {
+  .roadmap-image::before {
+    height: 102%;
+    top: 0;
+    left: 22%;
+  }
+  .roadmap-image {
+    padding-inline: 1.5rem;
+  }
+  .pointer-div {
+    justify-content: center;
+    gap: 45px;
+  }
+  .left-pointer {
+    justify-content: flex-start;
+    flex: 0.2;
+  }
+  .right-pointer {
+    flex: 0.8;
+  }
   .pop {
     width: 95%;
   }
-  .overlay {
-    min-height: 1000px;
-  }
   .pop svg {
     top: 4%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .overlay {
+    min-height: 1000px;
   }
 }
 @media screen and (max-width: 892px) {
@@ -268,11 +421,18 @@
   .overlay3 {
     height: 1000px;
   }
+  .pop {
+    min-height: 100vh;
+    max-height: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 632px) {
+  .left-pointer p {
+    font-size: 1.3rem;
+  }
 }
 @media screen and (max-width: 600px) {
-  .padding {
-    padding: 4rem 0rem;
-  }
   .padding h1 {
     font-size: 2.5rem;
   }
@@ -320,6 +480,9 @@
   .padding h1 {
     font-size: 2rem;
   }
+  .roadmap-image::before {
+    left: 24%;
+  }
 }
 @media screen and (max-width: 435px) {
   .overlay {
@@ -327,5 +490,10 @@
   }
   .pop svg {
     top: 1%;
+  }
+}
+@media screen and (max-width: 402px) {
+  .roadmap-image::before {
+    left: 25%;
   }
 }

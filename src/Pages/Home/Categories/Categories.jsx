@@ -35,7 +35,6 @@ function Categories() {
             </div>
           </div>
         </div>
-        <div className={`overlay2 ${pop ? "flex" : ""}`}></div>
         <div className={`pop ${pop ? "flex" : ""}`}>
           <FontAwesomeIcon icon={faXmark} onClick={() => showPop(false)} />
           <h1>What is ELC?</h1>
@@ -80,7 +79,6 @@ function Categories() {
             </div>
           </div>
         </div>
-        <div className={`overlay ${pop2 ? "flex" : ""}`}></div>
         <div className={`pop ${pop2 ? "flex" : ""}`}>
           <FontAwesomeIcon icon={faXmark} onClick={() => showPop2(false)} />
           <h1>Why ELC?</h1>
@@ -144,35 +142,110 @@ function Categories() {
             </div>
           </div>
         </div>
-        <div className={`overlay3 ${pop3 ? "flex" : ""}`}></div>
         <div className={`pop padding ${pop3 ? "flex" : ""}`}>
           <FontAwesomeIcon icon={faXmark} onClick={() => showPop3(false)} />
-          <h1>ROADMAP TO HOPE</h1>
-          <div className="para">
-            <h2>EPOH 1.0- February 2022</h2>
-            <p>
-              Educate people on rental businesses on Twitter, Discord, and
-              Telegram. Build our community of members with shared passions &
-              goals! Whitelist Allocations!
-            </p>
-          </div>
-          <div className="para">
-            <h2>EPOH 2.0- March 20222</h2>
-            <p>
-              Pre-sale: March 7th <br /> Public Sale: March 8th <br /> Reveal:
-              March 10th
-            </p>
-          </div>
-          <div className="para">
-            <h2>EPOH 3.0- March 2022 and Beyond</h2>
-            <p>
-              Start B&B Weekly Live course <br /> Settle and launch 10 units in
-              the first building for ELC holders (Downtown Austin, TX) <br />{" "}
-              Gift a weekend getaway with Mansion, Yacht and Private Jet
-              experiences in Beverly Hills to a group of 10 ELC holders (and
-              their +1’s). <br /> EPOH to HOPE <br /> End of Roadmap to HOPE{" "}
-              <br /> Reveal Roadmap EPOH
-            </p>
+          <div id="roadmap" className="roadmap2">
+            <h1 className="yellow_text">Roadmap To HOPE</h1>
+            <div className="roadmap-image">
+              <div className="pointer-div">
+                <div className="left-pointer">
+                  <p>EPOH 1.0</p>
+                </div>
+                <div className="right-pointer">
+                  <h4>February 2022</h4>
+                  <ul class="a">
+                    <li>
+                      <p>
+                        Educate people about the project and create awareness{" "}
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Gather a group of dedicated community members that share
+                        the same passion and goals
+                      </p>
+                    </li>
+                    <li>
+                      <p>Allocate whitelist spots</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="pointer-div pointer-div2">
+                <div className="left-pointer">
+                  <p className="big">EPOH 2.0</p>
+                </div>
+                <div className="right-pointer">
+                  <h4>March 2022 </h4>
+                  <ul class="a">
+                    <li>
+                      <p>Marketing Launch</p>
+                    </li>
+                    <li>
+                      <p>
+                        Keep educating about the Bed & Breakfast marketplace
+                      </p>
+                    </li>
+                    <li>
+                      <p>Pre-sale & Public Sale</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="pointer-div pointer-div2">
+                <div className="left-pointer">
+                  <p className="big">EPOH 3.0</p>
+                </div>
+                <div className="right-pointer">
+                  <h4>March 2022 and Beyond</h4>
+                  <ul class="a">
+                    <li>
+                      <p>Reveal Party on Twitter Spaces</p>
+                    </li>
+                    <li className="blue-gradient">
+                      <h6>
+                        A group of 10 ELC holders (and their +1’s) will receive
+                        a weekend getaway with Mansion, Yacht and Private Jet
+                        experiences in Beverly Hills
+                      </h6>
+                    </li>
+                    <li>
+                      <p>
+                        Finalize the course in all formats to send to holders
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Settle and launch 10 units in the first building
+                        (Downtown Austin, TX)
+                      </p>
+                    </li>
+                    <li>
+                      <p>Weekly Live B&B Mentorship for ELC holders</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="pointer-div pointer-div2">
+                <div className="left-pointer">
+                  <p className="big">EPOH 4.0</p>
+                </div>
+                <div className="right-pointer">
+                  <h4>EPOH to HOPE</h4>
+                  <ul class="a">
+                    <li>
+                      <p>End of Roadmap to HOPE</p>
+                    </li>
+                    <li>
+                      <p>Reveal Roadmap EPOH</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

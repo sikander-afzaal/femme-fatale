@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: h1;
-  src: url("./Assets/Font/heading\ font.ttf");
+  src: url("./Assets/Font/heading\ font.otf");
 }
 html {
   scroll-behavior: smooth;
