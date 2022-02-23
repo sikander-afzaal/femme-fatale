@@ -4,6 +4,7 @@ import vid1 from "../../../Assets/vid1.mp4";
 import vid2 from "../../../Assets/vid2.mp4";
 import vid3 from "../../../Assets/vid3.mp4";
 import vid4 from "../../../Assets/vid4.mp4";
+import poster from "../../../Assets/poster.jpg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 function Nft() {
@@ -45,6 +46,7 @@ function Nft() {
                 autoPlay={true}
                 controls={false}
                 src={vid1}
+                poster={poster}
                 className="vid-nft 1"
               ></video>
             </div>
@@ -59,6 +61,7 @@ function Nft() {
                 autoPlay={false}
                 controls={false}
                 src={vid2}
+                poster={poster}
                 className="vid-nft 2"
               ></video>
             </div>
@@ -73,6 +76,7 @@ function Nft() {
                 autoPlay={false}
                 src={vid3}
                 controls={false}
+                poster={poster}
                 className="vid-nft 3"
               ></video>
             </div>
@@ -87,6 +91,7 @@ function Nft() {
                 autoPlay={false}
                 controls={false}
                 src={vid4}
+                poster={poster}
                 className="vid-nft 4"
               ></video>
             </div>
