@@ -44,7 +44,7 @@
   overflow: hidden;
 }
 video[poster] {
-  max-width: 90%;
+  width: 1150px;
   object-fit: fill;
 }
 .vid-div {
@@ -54,6 +54,7 @@ video[poster] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* adjust the size of the video from here ----------------------------------------- */
   width: 1150px;
   height: auto;
   gap: 1.5rem;
