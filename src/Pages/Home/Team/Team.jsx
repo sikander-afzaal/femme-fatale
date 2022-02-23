@@ -13,16 +13,15 @@ function Team() {
       <h1>OUR TEAM</h1>
       <Splide
         options={{
-          type: "loop",
           perPage: 3,
           pauseOnHover: false,
           resetProgress: false,
           height: "auto",
           loop: true,
+          rewind: true,
           width: "90%",
           gap: "5rem",
           arrows: false,
-
           pagination: true,
           drag: true,
           perMove: 1,
